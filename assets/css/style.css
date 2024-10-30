@@ -1,0 +1,503 @@
+/* header */
+.hero{
+    width:100%;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    padding-left:70px ;
+    gap: 24px;
+    background-image: url(../images/backgroud.png);
+    background-size: cover;
+    .title{
+        width: 520px;
+        height: 262px;
+    }
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 57.6px;
+    }
+    .infohero{
+        height: 122px;
+        p{
+            width:100% ;
+            color: #555555;
+            font-size: 18px;
+            font-family: "Jost", sans-serif;
+            font-weight: 400;
+            line-height: 27px;
+        }
+        button{
+            width: 170px;
+            height: 48px;
+            border-radius: 24px;
+            margin-top: 10px;
+            color: white;
+            background-color: #FF782D;
+            border: none;
+            padding: 10px 24px;
+            cursor: pointer;
+        }
+    }
+} 
+/* top-categories section  */
+.top-categories {
+    padding: 70px;
+    .section-header {
+        height: 77px;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        .left-part{
+            gap: 20px;
+            h2 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 16px;
+                color: #888;
+            }
+        }
+        .right-part button {
+            width: 161px;
+            height: 48px;
+            padding: 10px 24px ;
+            background-color: white;
+            border: 2px solid #9D9D9D;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+    }
+    .category-cards {
+        margin:50px 100px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        flex-wrap: wrap;
+        gap: 31px;
+        justify-content: center;
+        .card {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #EAEAEA;
+            text-align: center;
+            border-radius: 20px;
+            .cardinfo{
+                gap: 12px;
+                img{
+                    width: 32px;
+                    margin: 10px;
+                }
+                h4{
+                    font-size: 20px;
+                }
+            }
+        }
+        .card:hover{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            h4{
+                color: #FF782D;
+            }
+        }
+    }
+    .part-2 button{
+        display: none;
+        padding: 10px 20px;
+        background-color: white;
+        border: 2px solid #9D9D9D;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+}
+
+/* featured-courses section */
+.featured-courses {
+    padding: 70px;
+    gap: 50px;
+    background-color: #ffffff;
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        .left-part h3 {
+            font-size: 32px;
+            line-height: 38.4px;
+        }
+        .left-part p {
+            font-family: "Jost", sans-serif;
+            font-size: 18px;
+            color: #888;
+        }
+        .right-part button {
+            padding: 10px 20px;
+            background-color: white;
+            border: 2px solid #9D9D9D;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+    }
+    .course-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        .card {
+            background-color: white;
+            border: 1px solid #EAEAEA;
+            padding-bottom: 35px;
+            border-radius: 30px;
+            .cardimage{
+                position: relative;
+                img{
+                    width:100% ;
+                    height: 50%;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+                .photography{
+                    width: 114px;
+                    height: 40px;
+                    padding: 8px 12px;
+                    text-align: center;
+                    font-weight: 500;
+                    color: white;
+                    background-color: #000000;
+                    font-family: "Jost", serif ;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    border-radius: 8px;
+                }
+            }
+            .featuredinfo{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #EAEAEA;
+                .info{
+                    gap: 16px;
+                    margin: 10px;
+                    p{
+                        font-family: "Jost", sans-serif;
+                        font-weight: 400;
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .courseinfo{
+                    display: flex;
+                    padding-left: 15px;
+                    .weekstudent{
+                        display: flex;
+                        margin-right: 0;
+                        .weekstudentimage img {
+                            padding-right:5px ;
+                        }
+                    }
+                }
+            }
+            .extrainfo{
+                margin-right: 20px ;
+                margin-bottom: -20px;
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                .moreinfo{
+                    display: flex;
+                    padding-left: 10px;
+                    .old-price {
+                        color: #9D9D9D;
+                        padding-bottom: 10px;
+                    }
+                    .free{
+                        margin-left: 10px;
+                        color: #55BE24;
+                        font-size: large;
+                    }
+                    h5{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .part-2 button{
+        display: none;
+        padding: 10px 20px;
+        background-color: white;
+        border: 2px solid #9D9D9D;
+        border-radius: 24px;
+        cursor: pointer;
+    }
+}
+/* add-card section */
+.add-card {
+    margin: 0 70px ;
+    background-image: url(../images/banner1.png);
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .left-part {
+        font-family: "Exo", sans-serif;
+        padding: 54px 24px 50px 50px;
+        p {
+            color: #555555;
+        }
+        h2 {
+            font-size: 32px;
+        }
+    }
+    .learn{
+        width: 445px;
+        font-family: "Jost", sans-serif;
+        padding-top: 24px;
+        p{
+            font-size: normal;
+            color: #555555;
+        }
+    }
+    button {
+        padding: 10px 20px;
+        margin-top:20px ;
+        background-color: #FF782D;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 24px;
+    }
+}
+/* cards section */
+.info-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding:  70px ;
+    background-color: white;
+    .card {
+        background-color: #F5F5F5;
+        padding: 40px;
+        text-align: center;
+        border-radius: 20px;
+        h2{
+            color: #FF782D;
+            margin-bottom: 16px;
+        }
+        a{
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+/* explore section */
+.explore {
+    display: flex;
+    padding: 70px;
+    background-color: #ffffff;
+    .left-part img {
+        max-width: 537px;
+        height: 469px;
+        background-size: cover;
+    }
+    .right-part {
+        display: flex;
+        padding: 20px 10px 10px 80px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+            color: #555555;
+        }
+        ul{
+            list-style-type: none; 
+        }
+        li::before {
+        content: '✔';
+        color: #55BE24;
+        margin-right: 10px; 
+        }
+        button {
+            width: 177px;
+            margin-top: 20px;
+            padding: 10px 24px;
+            background-color: #FF782D;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 24px;
+        }
+    }
+}
+/* card-academy section */
+.card-academy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 70px;
+    background-image: url(../images/banner2.png);
+    background-size: cover;
+    height: 225px;
+    .left-part {
+        display: flex;
+        align-items: center;
+        }
+        img{
+            padding: 40px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+    .right-part {
+        display: flex;
+        padding: 0 40px;
+        gap: 20px;
+        button{
+            padding: 10px 24px;
+            margin-top: 20px;
+        }
+        .stud{
+            border: 2px solid #FF782D;
+            border-radius: 24px;
+            background-color: #eaeaea00;
+            cursor: pointer;
+        }
+        .ins {
+            background-color: #FF782D;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 130px;
+        .title {
+            max-width: 95%;
+            padding:10px 10px;
+            flex-wrap: wrap;
+        }
+        .infohero{
+            padding-right: 40px;
+        }
+    }
+    .top-categories {
+        padding: 20px;
+        .section-header{
+            flex-wrap: wrap;
+            justify-content: center;
+            .left-part{
+                text-align: center;
+                margin: 0 70px ;
+            }
+            .right-part{
+                display: none;
+            }
+        }
+        .category-cards {
+            grid-template-columns: 1fr;
+        }
+        .part-2 button{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .featured-courses {
+        margin: 20px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        .section-header{
+            flex-direction: column;
+            gap: 30px;
+            margin-top: -30px;
+            .left-part{
+                text-align: center;
+                h2{
+                    width: 120%;
+                    font-size: 30px;
+                    margin-left: -20px;
+                }
+            }
+            .right-part{
+                display: none;
+            }
+        }
+        .course-cards {
+            flex-wrap: wrap;
+            grid-template-columns: 1fr; 
+        }
+        .part-2 button{
+            display: block;
+            margin: 20px auto;
+        }
+    }
+    .add-card {
+        margin: 0;
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: linear-gradient(103.63deg, #B5FFE7 1.83%, #FDC1C1 98.92%);;
+        border-radius: 0;
+        .left-part{
+            padding: 100px 30px;
+            text-align: center;
+            .learn{
+                width: 95%;
+            }
+        }
+    }
+    .info-card {
+        flex-wrap: wrap;
+        grid-template-columns: 1fr; 
+    }
+    .explore {
+        flex-wrap: wrap;
+        flex-direction: column-reverse; 
+        .right-part {
+            padding: 0 ;
+            gap: 10px;
+            flex-wrap: wrap;
+            h2{
+                width: 100%;
+                font-size: 39px;
+            }
+        }
+        .left-part img{
+            width: 100%;
+        }
+    }
+    .card-academy {
+        height: 400px;
+        width: 100%;
+        margin: 0;
+        flex-direction: column; 
+        align-items: center; 
+        flex-wrap: wrap;
+        .left-part{
+            flex-direction: column;
+            margin-bottom: 0;
+        }
+        .right-part {
+            gap: 10px;
+            flex-direction: column;
+            padding-bottom: 50px;
+            .stud{
+                width: 60%;
+                padding:10px;
+                margin-left: 40px;
+            }
+            .ins{
+                margin-top: 0;
+            }
+        }
+    }
+}

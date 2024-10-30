@@ -1,0 +1,96 @@
+/* header */
+.path{
+    height: 60px;
+    padding: 0 70PX;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    font-family: "Jost", sans-serif;
+    color: #555555; 
+    span{
+        color: #9d9d9d;
+    }
+}
+/* main section */
+.main-section {
+    width: 100%;
+    background: #ffffff; 
+    min-height: 100vh;
+    .container {
+        width: 80%;
+        margin: 2rem auto;
+        .fullwidth-container{
+            display: flex;
+            flex-direction: row;
+            .part{
+                display: grid;
+                gap: 5px;
+                width:45%;
+                padding: 8px;
+                .question {
+                    background-color: #F5F5F5;
+                    padding: 10px;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+                    h5{
+                        display: inline;
+                    }
+                    i{
+                        color: #555555d3;
+                        cursor: pointer;
+                        align-items: end;
+                        font-size: small;
+                        position: absolute;
+                        right: 10px;
+                        top: 15px;
+                    }
+                    p{
+                        color: #555555;
+                        display: none;
+                    }
+                }
+                .question:focus{
+                    display: inline;
+                    h5 {
+                        color: #ff7600;
+                    }
+                    p , i{
+                        display: block;
+                    }
+                    i{
+                        position: absolute;
+                        top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.myFooter img{
+    width: 50%;
+    padding-left: 70px;
+}
+@media screen and (max-width:992px){
+    .fullwidth-container{
+        display: flex;
+        flex-direction: column !important;
+        .part{
+            width:100% !important;
+            position: relative;
+            .question:focus{
+                i{
+                    position: absolute;
+                    top: 15px;
+                }
+            }
+        }
+    }
+    .myFooter img{
+        width: 100%;
+    }
+}

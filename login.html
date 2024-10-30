@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100..900&family=Jost:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/mystyle.css">
+    <link rel="stylesheet" href="./assets/css/loginstyle.css">
+    <title>Login / Register</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <img src="./assets/images/logo.png" alt="EduPress logo">
+            <ul class="nav-links">
+                <li class="active"><a href="./index.html" class="active">Home</a></li>
+                <li class="active"><a href="./courses.html" class="active">Courses</a></li>
+                <li class="active"><a href="./blog.html" class="active">Blog</a></li>
+                <li class="active"><a href="#" class="active">Page <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li class="active"><a href="#" class="active">Premium Theme</a></li>
+            </ul>
+            <div class="login">
+                <a href="./login.html">Login / Register </a>
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button class="list"><i class="fa-solid fa-bars"></i></button>
+        </nav>
+        <div class="path">
+            <p>Homepage <span>&gt; Login / Register </span></p>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form>
+                    <div class="input-group">
+                        <input type="text" placeholder="Email or username*" required />
+                    </div>
+                    <div class="input-group">
+                        <input type="password" placeholder="Password*" required />
+                        <img src="./assets/images/eye.png" alt="" class="toggle-password">
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox" /> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                    <a href="#">Lost your password?</a>
+                </form>
+            </div>
+            <div class="register-box">
+                <h2>Register</h2>
+                <form>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email*" required />
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Username*" required />
+                    </div>
+                    <div class="input-group">
+                            <input type="password" placeholder="Password*" required />
+                            <img src="./assets/images/eye.png" alt="" class="toggle-password">
+                        </div>
+                        <div class="input-group">
+                            <input type="password" placeholder="Confirm Password*" required />
+                            <img src="./assets/images/eye.png" alt="" class="toggle-password">
+                        </div>
+                            <button type="submit" class="btn-register">Register</button>
+                    </form>
+                </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./assets/images/logo.png" alt="EduPress">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="footer-help">
+                <h4>GET HELP</h4>
+                <ul>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                    <li><a href="#">Latest Articles</a></li>
+                    <li><a href="./faqs.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>PROGRAMS</h4>
+                <ul>
+                    <li><a href="#">Art & Design</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">IT & Software</a></li>
+                    <li><a href="#">Language</a></li>
+                    <li><a href="#">Programming</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>CONTACT US</h4>
+                <p>Address: 2321 New Design Str, Lorem Ipsum10 Hudson Yards, USA</p>
+                <p>Tel: +(123) 2500-567-8988</p>
+                <p class="mail">Mail: supportlms@gmail.com</p>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                <a href="#" aria-label="X-twiter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright @ 2024 LearnPress LMS | Powered by ThimPress.</p>
+        </div>
+    </footer>
+</body>
+</html>
